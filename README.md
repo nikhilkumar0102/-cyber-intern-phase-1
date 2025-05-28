@@ -36,15 +36,18 @@ This repository documents the setup of a cybersecurity lab environment for Phase
 ## 🔐 SIEM Setup - Splunk Enterprise on Kali Linux
 
 1. **Download Splunk Enterprise:**
+
+![image](/screenshots/download1.png)
+
    - [Splunk Download](https://www.splunk.com/en_us/download/splunk-enterprise.html)
   
-2. . **Install Splunk:**
+3. . **Install Splunk:**
    ```bash
    sudo dpkg -i splunk_package_name.deb
    sudo /opt/splunk/bin/splunk start --accept-license
    ```
 
-3. **Set up admin credentials and login to**:
+4. **Set up admin credentials and login to**:
 ```bash
 http://localhost:8000
 ```
