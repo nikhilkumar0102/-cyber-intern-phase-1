@@ -57,11 +57,13 @@ http://localhost:8000
 1. **Install Sysmon**
 - `Download from`:
    - [Sysinternals Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
+     
 
 - Install Command:
 ```powershell
 sysmon -accepteula -i sysmonconfig.xml
 ```
+
 - `Sysmon Config`: Use SwiftOnSecurity community config:
   - [sysmon-config repo](https://github.com/SwiftOnSecurity/sysmon-config)
  
@@ -115,23 +117,26 @@ Once complete, you should start seeing logs from Sysmon in your Splunk instance 
 
 ## 📁 Repo Structure
 
-cyber-intern-phase-1/
-├── logs/
-│   └── sample_logs.json
-├── screenshots/
-│   └── splunk_dashboard.png
-├── reports/
-│   └── setup_summary.md
-├── hints/
-│   └── helpful_links.md
-├── configs/
-│   ├── sysmonconfig.xml
-│   ├── inputs.conf
-│   └── outputs.conf
-└── README.md
+```cyber-intern-phase-1/
+├── logs/ # Contains exported logs (JSON, TXT, etc.)
+├── screenshots/ # Screenshots of setup, configurations, dashboards
+├── reports/ # Summary notes, setup steps, attack findings
+├── hints/ # Helpful links, commands, tips, cheat sheets
+├── configs/ # Sysmon, Winlogbeat, Splunk Forwarder config files
+└── README.md # Project overview and setup guide
+```
 
 
+## ✅ Setup Checklist
 
+| Item                                      | Status   |
+|-------------------------------------------|----------|
+| VirtualBox/VMware Installed               | ✅       |
+| Kali Linux VM ready                       | ✅       |
+| Windows 10 VM ready                       | ✅       |
+| Sysmon                                    | ✅       |
+| Splunk Enterprise & Forwarder setup complete, Sysmon installed | ✅       |
+| GitHub repo created                       | ✅       |
 
    
    
